@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+.header .navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.header ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.header ul li {
+    margin: 0 30px;
+    margin: 0 15px;
+    position: relative;
+}
+
+.header a {
+    color: #92081f;
+    text-decoration: none;
+}
+
+.header a:hover {
+    color: #D10024;
+    /* text-decoration: underline;*/ 
+    background-color: transparent;
+}
+
+.header a:after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #D10024;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+}
+
+.header a:hover:after {
+    width: 100%;
+}
+
+#Hero {
+    background-image: url("https://www.montres-de-luxe.com/photo/art/default/2495749-3510908.jpg?v=1416904000");
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5em;
+}
+#main{
+display: grid;
+ grid-template-columns: repeat(4, 1fr);
+   justify-items: center
+ 
+   }
+   #button{
+    display: flex;
+    justify-content: center;
+   }
+   
+
+
+
+
+/* CSS */
+.button-9 {
+    appearance: button;
+    backface-visibility: hidden;
+    background-color: #405cf5;
+    border-radius: 6px;
+    border-width: 0;
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .1) 0 2px 5px 0, rgba(0, 0, 0, .07) 0 1px 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+    font-size: 50%;
+    height: 44px;
+    line-height: 1.15;
+    margin: 12px 0 0;
+    outline: none;
+    overflow: hidden;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transform: translateZ(0);
+    transition: all .2s, box-shadow .08s ease-in;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 50%;
+
+}
+
+.button-9:disabled {
+    cursor: default;
+}
+
+.button-9:focus {
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+.products_list {
+    max-width: 1000px;
+
+    display: grid ;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+
+.product {
+    max-width: 213px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    border: 2px solid rgb(218, 217, 217);
+}
+
+.product:hover {
+    border-color: #D10024;
+}
+
+.product img {
+    width: 100%;
+}
+
+.product_info {
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.product_info h2,
+.product_info h4 {
+    margin-bottom: 10px;
+}
+
+.product_info h4 {
+    color: #D10024;
+}
+.product_icons i {
+    margin: 0 10px;
+   
+    
+}
+
+.product_icons i:hover {
+    color: #D10024;
+    
+}
+
+.product_icons:before {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 2px;
+    background-color: rgb(218, 217, 217);
+    margin: 0 auto 10px;
+}
+.liked {
+    color: red; /* Change color when liked */
+}
+.total-price{
+    font-size: xx-large;
+    text-align: center;
+}
+.liked {
+    color: red; /* Change color when liked */
+}
+
+
+.cart-count {
+    position: absolute;
+    top: -5px; /* Adjust this value to move it vertically */
+    right: -10px; /* Adjust this value to move it horizontally */
+    background-color: red; /* Background color of the count */
+    color: white; /* Text color */
+    border-radius: 50%; /* Makes it circular */
+    padding: 2px 5px; /* Padding around the text */
+    font-size: 0.8em; /* Font size */
+}
+
+.modal {
+    display: none; /* Cachée par défaut */
+    position: fixed;
+    z-index: 1; /* Au-dessus des autres éléments */
+    left: 0;
+    top: 0;
+    width: 100%; /* Plein écran */
+    height: 100%; /* Plein écran */
+    overflow: auto; /* Ajoute un défilement si nécessaire */
+    background-color: rgba(0, 0, 0, 0.5); /* Fond sombre */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto; /* Centre la modale */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Largeur de la modale */
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.newdisplay{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content:space-around;;
+}
+
+
+.total{
+    font-size: xx-large;
+    margin: 20px 30%;
+    align-items: center;
+}
+.trash{
+    cursor: pointer;
+     font-size: 150%;
+}

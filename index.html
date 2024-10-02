@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online store </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <body>
+
+        <header class="header">
+            <nav class="navbar">
+                <img src="th.jpg" alt="logo">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#shop">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <i class="fas fa-shopping-cart" id="cartIcon" style="cursor: pointer; font-size: 200%;"></i>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close-button" id="closeModal">&times;</span>
+                                <h2 >Shopping Cart</h2>
+                                
+                            </div>
+                        </div>
+                        <div class="cart-count" ><span id="quantity">0</span></div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!--hero section -->
+        <section id="Hero" class="text-center">
+            <div>
+                <h1 style="font-size:30px;"><strong> NEW ARRIVALS</strong> </h1>
+                <p style="color: brown; font-size:30px;"> We are pleased to announce that the Roue Carree timepiece from
+                    Maurice Lacroix
+                    will be officially unveiled for the first time in France at the forthcoming Salon Belles Montres.
+                </p>
+                <button class="button-9" type="button"> Shop Now</button>
+
+            </div>
+
+        </section>
+        <!--main-->
+        <main id="main">
+            <!--poduct1-->
+            <div class="product">
+                <img src="men.jpg" alt="men's Watches"
+                    width="266">
+                <div class="product_info">
+                    <h2> Men' WATCHES</h2>
+                    <h4>400DT</h4>
+                    <div class="product_icons">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-code-compare"></i>
+                        <i class="fa-solid fa-bag-shopping" onclick="addProduct(0, `Men's Watches`, 400,'men.jpg')" ></i>
+                    </div>
+                </div>
+            </div>
+
+            <!--poduct2-->
+            <div class="product">
+                <img src= "ladies.jpg"
+                    alt="ladies Watches" width="266">
+                <div class="product_info">
+                    <h2> LADIES' WATCHES</h2>
+                    <h4>400DT</h4>
+                    <div class="product_icons">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-code-compare"></i>
+                        <i class="fa-solid fa-bag-shopping"onclick="addProduct(1, 'LADIES Watches', 400,'ladies.jpg')" ></i>
+                    </div>
+                </div>
+            </div>
+            <!--poduct3-->
+            <div class="product">
+                <img src="sac.jpg" alt="ladies bag" width="266">
+                <div class="product_info">
+                    <h2> LADIES bag</h2>
+                    <h4>80DT</h4>
+                    <ul>
+
+                    </ul>
+                    <div class="product_icons">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-code-compare"></i>
+                        <i class="fa-solid fa-bag-shopping"  onclick="addProduct(2, 'LADIES bag', 80,'sac.jpg')"></i>
+                    </div>
+                </div>
+            </div>
+            <!--poduct 4-->
+            <div class="product">
+                <img src="men bag.jpg"
+                    alt="men's bag" width="266">
+                <div class="product_info">
+                    <h2>Men's bag </h2>
+                    <h4>100DT</h4>
+                    <div class="product_icons">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-code-compare"></i>
+                        <i class="fa-solid fa-bag-shopping "onclick="addProduct(3, `Men's Bag`, 100,'men bag.jpg')" ></i>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+
+        <footer class="footer">
+            <p>Copyright ©2024 All rights reserved</p>
+        </footer>
+        <script src="script.js"></script>
+
+    </body>
+
+</html>
